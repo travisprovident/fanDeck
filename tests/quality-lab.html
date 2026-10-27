@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FanDeck — Local Quality Lab</title><link rel="stylesheet" href="/quality-lab.css">
+<main><h1>Local video quality test</h1><p>Uses a generated 1920 × 1080, 30 fps video. No streaming websites, accounts, uploads, or original-video extraction.</p>
+<div class="actions"><button id="run">Run video-element tests</button><button id="tab" disabled>Compare browser-tab capture</button></div>
+<p id="status" role="status">Ready. Keep this tab visible while the test runs.</p>
+<div id="source-box"><video id="source" muted playsinline loop></video></div>
+<section id="outputs"></section><pre id="results">Results will appear here.</pre>
+<p>Video-element tests compare intrinsic capture resolution at small and large player sizes, then exercise four independent local video players and four receivers. Tab tests require you to select this test tab in the sharing dialog. These are separate capture APIs; tab-sharing results do not prove extension tabCapture behavior.</p></main><script type="module" src="/quality-lab.js"></script></html>

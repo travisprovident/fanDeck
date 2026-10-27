@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FanDeck · Every game. One screen.</title>
+  <meta name="description" content="FanDeck brings your game tabs together in one fullscreen multiview. Every game. One screen.">
+  <link rel="icon" href="./fandeck.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="watching controls-visible">
+  <header>
+    <div class="brand"><img class="brand-icon" src="./fandeck.svg" width="38" height="38" alt=""><div><strong>FanDeck</strong><span class="subtitle">Every game. One screen.</span></div></div>
+    <nav aria-label="Viewer controls">
+      <label class="layout-label">Layout <select id="layout"><option value="auto" selected>Automatic</option><option value="2">2 games</option><option value="3">3 games</option><option value="4">4 games</option><option value="6">6 games</option></select></label>
+      <button id="mute">Mute all</button><button id="watch">Watch mode</button><button id="fullscreen">Fullscreen ↗</button>
+    </nav>
+  </header>
+  <main>
+    <div class="intro"><div><span class="eyebrow">MULTIVIEW / LOCAL</span><h1>Every game. One screen.</h1></div><button id="help-toggle" aria-expanded="true" aria-controls="help">How it works</button></div>
+    <aside id="help"><strong>Bring your own browser tabs.</strong> Open your games in Chrome or Edge, then click <b>Add a stream</b> and choose a game under <b>Chrome Tab</b> or <b>Microsoft Edge Tab</b>. Enable tab audio in the sharing dialog. Use the player’s fullscreen button in the source tab to fill its tile. <span>Mute the original tabs to avoid duplicate audio; click Listen here to hear one through this viewer. Capture support varies by site. Nothing is recorded or uploaded.</span></aside>
+    <p id="notice" role="status" aria-live="polite"></p>
+    <section id="grid" class="grid" data-layout="4" aria-label="Stream grid"></section>
+    <section id="welcome">
+      <span class="eyebrow">YOUR FRONT ROW SEAT</span>
+      <h1>What are we watching?</h1>
+      <p>Add your first game. We’ll make room for the rest.</p>
+      <button id="welcome-add" class="primary">+ Add a game</button>
+      <p class="welcome-hint">Already have a game open? Click the FanDeck icon on that tab.</p>
+    </section>
+    <footer><span><i></i> Runs on your laptop</span><span>Choose a tile’s audio · Double-click video to focus</span></footer>
+  </main>
+  <div id="watch-controls" aria-label="Viewing controls">
+    <span class="watch-brand"><img src="./fandeck.svg" width="22" height="22" alt="">FanDeck</span>
+    <button id="add-game" class="primary">+ Add game</button>
+    <label>Layout <select id="watch-layout" aria-label="Game layout"><option value="auto" selected>Auto</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="6">6</option></select></label>
+    <label>Sound <select id="audio-source" aria-label="Game audio source"><option value="muted">Off</option></select></label>
+    <label>Picture <select id="picture-mode" aria-label="Picture sizing" title="Fit shows the whole picture. Fill crops the edges to fill each tile."><option value="contain">Fit</option><option value="cover">Fill</option></select></label>
+    <button id="watch-mute">Mute all</button><button id="watch-fullscreen">Full screen</button><button id="add-help" aria-label="How to add games">Help</button>
+  </div>
+  <dialog id="add-dialog" aria-labelledby="add-title">
+    <button id="close-add" class="dialog-close" aria-label="Close help">×</button>
+    <span class="eyebrow">LET’S ADD A GAME</span>
+    <h2 id="add-title">Your game. Three easy steps.</h2>
+    <ol id="add-steps"><li><strong>Open your game</strong><span>Go to the browser tab with your game and press play.</span></li><li><strong>Click FanDeck</strong><span>Click our icon next to the address bar. If you don’t see it, look in the puzzle-piece Extensions menu.</span></li><li><strong>You’re ready to watch</strong><span>Your game appears here. Repeat to add another. Click any game to hear it.</span></li></ol>
+    <button id="got-it" class="primary">Got it</button>
+    <p>Keep your game tabs open while you watch.</p>
+  </dialog>
+  <template id="tile-template">
+    <article class="tile">
+      <div class="tile-bar"><label class="tile-name"><span class="number"></span><input aria-label="Game name" maxlength="60"></label><div class="tile-actions"><button class="focus" aria-label="Expand game" title="Expand game"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button><details class="more"><summary aria-label="More game options">•••</summary><div class="more-menu"><button class="listen" disabled>Play game audio</button><button class="open-source" hidden>Open game tab</button><button class="replace" hidden>Replace game</button><button class="remove" disabled>Remove game</button></div></details></div></div>
+      <div class="screen"><div class="picture"><video autoplay playsinline muted></video></div><div class="empty"><span class="screen-icon">+</span><h2>Room for another game</h2><p>We’ll put your next game here.</p><button class="add">+ Add game</button></div><button class="resume" hidden>▶ Play game</button></div>
+      <div class="tile-bottom"><span class="state">Waiting for a game</span></div>
+    </article>
+  </template>
+  <script src="./app.js" type="module"></script>
+</body>
+</html>
+
+
+
+

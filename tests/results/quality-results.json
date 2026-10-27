@@ -1,0 +1,199 @@
+{
+  "test": "sports-viewer-quality-v1",
+  "startedAt": "2026-10-27T20:27:45.604Z",
+  "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+  "source": {
+    "width": 1920,
+    "height": 1080,
+    "requestedFps": 30,
+    "clipSeconds": 4,
+    "codec": "video/webm;codecs=vp9",
+    "bytes": 245450
+  },
+  "results": [
+    {
+      "label": "video-element / small player",
+      "settings": {
+        "aspectRatio": 1.7777777777777777,
+        "deviceId": "fe554ab6-e520-4760-85cd-0744413c9260",
+        "frameRate": 29.077375411987305,
+        "height": 1080,
+        "resizeMode": "none",
+        "width": 1920
+      },
+      "frames": 117,
+      "elapsedMs": 4005,
+      "measuredFps": 29.2,
+      "timestampFps": 29.1,
+      "intrinsicVideo": [
+        1920,
+        1080
+      ],
+      "visiblePlayer": {
+        "width": 640,
+        "height": 360
+      }
+    },
+    {
+      "label": "video-element / expanded player",
+      "settings": {
+        "aspectRatio": 1.7777777777777777,
+        "deviceId": "8594eec7-4258-4c62-b728-c73c3072d979",
+        "frameRate": 30.303030014038086,
+        "height": 1080,
+        "resizeMode": "none",
+        "width": 1920
+      },
+      "frames": 122,
+      "elapsedMs": 4009,
+      "measuredFps": 30.4,
+      "timestampFps": 30.3,
+      "intrinsicVideo": [
+        1920,
+        1080
+      ],
+      "visiblePlayer": {
+        "width": 1620,
+        "height": 911
+      }
+    },
+    {
+      "label": "four-player / game 1",
+      "settings": {
+        "aspectRatio": 1.7777777777777777,
+        "deviceId": "16b9cfe2-3ade-4ccb-ac72-ec8ac7c62cdb",
+        "frameRate": 22.727272033691406,
+        "height": 1080,
+        "resizeMode": "none",
+        "width": 1920
+      },
+      "frames": 91,
+      "elapsedMs": 4005,
+      "measuredFps": 22.7,
+      "timestampFps": 22.7,
+      "receiverFrames": 91,
+      "receiverDroppedFrames": 0
+    },
+    {
+      "label": "four-player / game 2",
+      "settings": {
+        "aspectRatio": 1.7777777777777777,
+        "deviceId": "5769ec3a-e430-492b-b736-d02714194eb9",
+        "frameRate": 22.727272033691406,
+        "height": 1080,
+        "resizeMode": "none",
+        "width": 1920
+      },
+      "frames": 90,
+      "elapsedMs": 4006,
+      "measuredFps": 22.5,
+      "timestampFps": 22.7,
+      "receiverFrames": 91,
+      "receiverDroppedFrames": 0
+    },
+    {
+      "label": "four-player / game 3",
+      "settings": {
+        "aspectRatio": 1.7777777777777777,
+        "deviceId": "3c95637b-ddad-45f3-a346-17424a3a3b47",
+        "frameRate": 22.727272033691406,
+        "height": 1080,
+        "resizeMode": "none",
+        "width": 1920
+      },
+      "frames": 91,
+      "elapsedMs": 4006,
+      "measuredFps": 22.7,
+      "timestampFps": 22.8,
+      "receiverFrames": 91,
+      "receiverDroppedFrames": 0
+    },
+    {
+      "label": "four-player / game 4",
+      "settings": {
+        "aspectRatio": 1.7777777777777777,
+        "deviceId": "ef8d54a9-4946-4ecc-8472-6c623358fcb9",
+        "frameRate": 22.727272033691406,
+        "height": 1080,
+        "resizeMode": "none",
+        "width": 1920
+      },
+      "frames": 90,
+      "elapsedMs": 4006,
+      "measuredFps": 22.5,
+      "timestampFps": 22.7,
+      "receiverFrames": 91,
+      "receiverDroppedFrames": 0
+    },
+    {
+      "label": "getDisplayMedia / small player",
+      "settings": {
+        "aspectRatio": 2.2482435597189694,
+        "cursor": "motion",
+        "deviceId": "web-contents-media-stream://255:5",
+        "displaySurface": "browser",
+        "frameRate": 30,
+        "height": 854,
+        "logicalSurface": true,
+        "resizeMode": "crop-and-scale",
+        "screenPixelRatio": 1,
+        "width": 1920
+      },
+      "frames": 103,
+      "elapsedMs": 4002,
+      "measuredFps": 25.7,
+      "timestampFps": 25.9,
+      "visiblePlayer": {
+        "width": 640,
+        "height": 360
+      },
+      "viewport": [
+        1920,
+        855
+      ],
+      "estimatedPicturePixels": [
+        640,
+        360
+      ],
+      "note": "Picture pixels estimated from viewport and capture geometry; not a visual sharpness score."
+    },
+    {
+      "label": "getDisplayMedia / expanded player",
+      "settings": {
+        "aspectRatio": 2.2482435597189694,
+        "cursor": "motion",
+        "deviceId": "web-contents-media-stream://255:5",
+        "displaySurface": "browser",
+        "frameRate": 30,
+        "height": 854,
+        "logicalSurface": true,
+        "resizeMode": "crop-and-scale",
+        "screenPixelRatio": 1,
+        "width": 1920
+      },
+      "frames": 118,
+      "elapsedMs": 4011,
+      "measuredFps": 29.4,
+      "timestampFps": 29.5,
+      "visiblePlayer": {
+        "width": 1520,
+        "height": 855
+      },
+      "viewport": [
+        1920,
+        855
+      ],
+      "estimatedPicturePixels": [
+        1520,
+        854
+      ],
+      "note": "Picture pixels estimated from viewport and capture geometry; not a visual sharpness score."
+    }
+  ],
+  "limitations": [
+    "Generated local test clip; no real sports content, network variability, DRM, or cross-origin player tested.",
+    "Four-player test uses one local file in four independent media elements, not four browser tabs.",
+    "getDisplayMedia and extension tabCapture are different APIs."
+  ],
+  "error": "The play() request was interrupted because video-only background media was paused to save power. https://goo.gl/LdLk22"
+}

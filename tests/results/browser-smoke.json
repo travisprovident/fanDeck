@@ -1,0 +1,72 @@
+{
+  "suite": "FanDeck browser reliability",
+  "checks": [
+    {
+      "name": "Clean startup and help dialog",
+      "passed": true
+    },
+    {
+      "name": "One real media stream, automatic player isolation and full-picture fit",
+      "passed": true
+    },
+    {
+      "name": "Automatically grows through two, three, four and six games",
+      "passed": true
+    },
+    {
+      "name": "Every manual layout and Fit/Fill update actual rendered tiles",
+      "passed": true
+    },
+    {
+      "name": "Landscape and portrait layouts stay inside the screen without overlapping",
+      "passed": true
+    },
+    {
+      "name": "Controls hide after inactivity and small-tile menus remain usable",
+      "passed": true
+    },
+    {
+      "name": "Audio switching and mute-all leave at most one game audible",
+      "passed": true
+    },
+    {
+      "name": "Duplicate sources and the seventh game cannot create extra captures",
+      "passed": true
+    },
+    {
+      "name": "25 replacement/removal cycles release old streams and preserve the six-game limit",
+      "passed": true
+    },
+    {
+      "name": "Removing an expanded game restores the grid and stops its tracks",
+      "passed": true
+    },
+    {
+      "name": "Failed replacement keeps the old game playing and allows retry",
+      "passed": true
+    },
+    {
+      "name": "Scrolling/resizing player data and missing-player fallback update cleanly",
+      "passed": true
+    },
+    {
+      "name": "Real player detector finds an actual video and follows source scrolling/resizing",
+      "passed": true
+    },
+    {
+      "name": "Real detector refuses ambiguous or partly offscreen players",
+      "passed": true
+    },
+    {
+      "name": "Real frame navigation releases every attached capture",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Extension capture and messaging APIs are simulated; DOM, layout, media elements and MediaStreams are real.",
+    "No DRM, protected services, external sites or long-session performance claims."
+  ],
+  "startedAt": "2026-10-27T21:34:56.175Z",
+  "passed": true,
+  "finishedAt": "2026-10-27T21:35:01.870Z"
+}
